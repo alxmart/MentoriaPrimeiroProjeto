@@ -17,9 +17,6 @@ class MainActivity : AppCompatActivity() {
         val textoResultado = findViewById<TextView>(R.id.text_resultado)
         val numero = Random().nextInt(11)
         textoResultado.setText("Número gerado: $numero ")
-
-
-
     }
 
 }
