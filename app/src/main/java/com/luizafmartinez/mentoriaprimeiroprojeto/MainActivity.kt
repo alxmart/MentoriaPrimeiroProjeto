@@ -3,6 +3,8 @@ package com.luizafmartinez.mentoriaprimeiroprojeto
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.TextView
+import java.util.Random
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -10,8 +12,14 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
-    fun clique(view: View) {
-        println("Foi clicado")
+    fun sortear(view: View) {
+
+        val textoResultado = findViewById<TextView>(R.id.text_resultado)
+        val numero = Random().nextInt(11)
+        textoResultado.setText("Número gerado: $numero ")
+
+
+
     }
 
 }
